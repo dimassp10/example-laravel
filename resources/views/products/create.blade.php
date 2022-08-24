@@ -55,7 +55,7 @@
                                     <input class="btn btn-primary" type="submit" value="Send">
                                 </div>
                             </form>
-                            <a href="/products" >Back</a>
+                            <a href="/blog" >Back</a>
  
                         </div>
                     </div>

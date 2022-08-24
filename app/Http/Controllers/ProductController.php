@@ -36,20 +36,19 @@ class ProductController extends Controller
         ]);
 
          
-
         return redirect ('/products');
     }
-    
+
     public function show($id)
     {
         $products = DB::table('products')->where('id',$id)->get();
-        return view ('products.show',['product' => $products]);
+        
     }
     
     public function edit($id)
     {
         $products = DB::table('products')->where('id',$id)->get();
-        return view ('products.edit',['product' => $products]);
+       
     }
     
     public function update(Request $request)
@@ -64,7 +63,7 @@ class ProductController extends Controller
 
     public function destroy($id)
     {
-      $products = DB::table('products')->where('id',$id)->delete();
+      $pr = DB::table('products')->where('id',$id)->delete();
       return redirect ('/products');
     }
 }

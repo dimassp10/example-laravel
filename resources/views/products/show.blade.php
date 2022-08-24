@@ -10,6 +10,7 @@
   @endforeach
 
   
+  
   		<p>Edit Data Tersebut : 
        	<a href="/products/edit/{{ $product->id}}">Edit</a>
 		<p>Hapus Data Tersebut : 
