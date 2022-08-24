@@ -5,9 +5,10 @@
 <body>
 
      <h3>Edit Product</h3>
- 
+     <h1>AAWOKAOWKAOKWAOKWAOKWAO</h1>
+
      <a href="/products">Back</a>
- 
+
      @if ($errors->any())
      <div class="alert alert-danger alert-dismissible" role="alert">
      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><em>
@@ -19,7 +20,7 @@
      </em>
      </div>
      @endif
-     
+
      @foreach($product as $product)
      <form action="/products/update" method="post">
           {{ csrf_field() }}
@@ -30,6 +31,6 @@
      </form>
      @endforeach
 
-          
+
 </body>
 </html>
